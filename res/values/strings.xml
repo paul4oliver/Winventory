@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Winventory</string>
+    <string name="details">Overview</string>
+    <string name="item_name">Enter a name</string>
+    <string name="enter_username">Enter your username</string>
+    <string name="enter_match">Enter your password</string>
+    <string name="sign_in">Sign In!</string>
+    <string name="no_acct">Don\'t have an account?</string>
+    <string name="hello_first_fragment">Hello</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="first_fragment_label">first fragment</string>
+    <string name="second_fragment_label">second fragment</string>
+    <string name="sign_up">Sign up!</string>
+    <string name="enter_uname">Enter a username</string>
+    <string name="enter_umatch">Enter a password</string>
+    <string name="re_umatch">Re-enter password</string>
+    <string name="enter_phone">Enter phone no. (optional)</string>
+    <string name="acct_already">Already have an account?</string>
+    <string name="id">ID</string>
+    <string name="name">Name</string>
+    <string name="qty">Qty.</string>
+    <string name="add_new_item">Add new item</string>
+    <string name="decrease_item">Decrease item count</string>
+    <string name="count">count</string>
+    <string name="increase_item">Increase item count</string>
+    <string name="_0">0</string>
+    <string name="remove_item">Remove item from inventory</string>
+    <string name="update">update</string>
+    <string name="add">add</string>
+    <string name="enter_description">Enter item description</string>
+    <string name="enter_name">Enter item name</string>
+    <string name="app_logo">App Logo</string>
+    <string name="arrow">right arrow</string>
+
+</resources>

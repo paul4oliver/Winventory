@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/login_fragment">
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="org.snhu.inventoryapp.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/show_item_list"
+            app:destination="@id/list_fragment" />
+        <action
+            android:id="@+id/register_account"
+            app:destination="@id/register_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/register_fragment"
+        android:name="org.snhu.inventoryapp.RegisterFragment"
+        android:label="Register"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/back_to_login_fragment"
+            app:destination="@id/login_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/list_fragment"
+        android:name="org.snhu.inventoryapp.ListFragment"
+        android:label="@string/app_name">
+        <action
+            android:id="@+id/show_item_detail"
+            app:destination="@id/detail_fragment" />
+        <action
+            android:id="@+id/show_add_item"
+            app:destination="@id/add_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detail_fragment"
+        android:name="org.snhu.inventoryapp.DetailFragment"
+        android:label="@string/details"
+        tools:layout="@layout/fragment_detail">
+        <action
+            android:id="@+id/show_item_list"
+            app:destination="@id/list_fragment" />
+        <argument
+            android:name="item_id"
+            android:defaultValue="1"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/add_fragment"
+        android:name="org.snhu.inventoryapp.AddFragment"
+        android:label="Add new item"
+        tools:layout="@layout/fragment_add">
+        <action
+            android:id="@+id/show_item_list"
+            app:destination="@id/list_fragment" />
+    </fragment>
+</navigation>
